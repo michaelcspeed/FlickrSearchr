@@ -13,8 +13,7 @@ public class FlickrSearchr extends Application {
 		// Create global configuration and initialize ImageLoader with this
 		// configuration
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
-				getApplicationContext())
-
+				getApplicationContext()).denyCacheImageMultipleSizesInMemory()
 		.build();
 		ImageLoader.getInstance().init(config);
 	}

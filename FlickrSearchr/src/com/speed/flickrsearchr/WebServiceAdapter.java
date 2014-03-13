@@ -26,9 +26,10 @@ public class WebServiceAdapter {
 		String url = String
 				.format("http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%s&text=%s&format=json&nojsoncallback=1",
 						c.getString(R.string.api_key), query);
+		
 		// API key: "bd29e274e9626faabb31ab494ba6c84b",
 
-		//Log.d("flik", url);
+		Log.d("flik", url);
 
 		if (hasConnection(c)) {
 			return retrieveInfo(url);
